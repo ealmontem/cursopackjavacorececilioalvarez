@@ -10,4 +10,9 @@ public class Deportista extends Persona {
     public void setDeporte(String deporte) {
         this.deporte = deporte;
     }
+
+    @Override
+    public void andar() {
+        System.out.println(getNombre() + " " + "camina a " + " 10 km/h" );
+    }
 }
