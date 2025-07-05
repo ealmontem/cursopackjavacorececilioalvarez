@@ -15,13 +15,11 @@ public class Main {
 
     }
 
-    public static void imprimirInformacion( Persona persona){
+    public static void imprimirInformacion(Persona persona){
         Persona[] listado = new Persona[1];
+        //
        listado[0] = persona;
-
        listado[0].andar();
-
-
 
     }
 }
