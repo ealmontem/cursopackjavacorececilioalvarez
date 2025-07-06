@@ -10,7 +10,10 @@ public class Persona {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+     void imprimirTextoAndar(){
+        System.out.print(getNombre() + " camina a " );
+    }
     public void andar(){
-        System.out.println(getNombre() + " " + "camina a " + " 5 km/h" );
+        System.out.println(getNombre()  + " camina a " + "5 km/h" );
     }
 }

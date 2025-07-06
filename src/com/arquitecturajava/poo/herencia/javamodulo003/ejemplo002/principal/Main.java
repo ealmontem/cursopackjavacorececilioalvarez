@@ -1,4 +1,7 @@
-package com.arquitecturajava.poo.herencia.javamodulo003.ejemplo002;
+package com.arquitecturajava.poo.herencia.javamodulo003.ejemplo002.principal;
+
+import com.arquitecturajava.poo.herencia.javamodulo003.ejemplo002.Deportista;
+import com.arquitecturajava.poo.herencia.javamodulo003.ejemplo002.Persona;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,9 +12,8 @@ public class Main {
        Deportista d = new Deportista();
        d.setNombre("Belinda");
 
-
-        imprimirInformacion(p);
-        imprimirInformacion(d);
+       imprimirInformacion(p);
+       imprimirInformacion(d);
 
     }
 
@@ -20,6 +22,7 @@ public class Main {
         //
        listado[0] = persona;
        listado[0].andar();
+
 
     }
 }
