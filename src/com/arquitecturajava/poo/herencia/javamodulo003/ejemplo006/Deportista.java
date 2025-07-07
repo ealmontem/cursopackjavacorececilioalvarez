@@ -3,6 +3,12 @@ package com.arquitecturajava.poo.herencia.javamodulo003.ejemplo006;
 public class Deportista extends Persona {
     private String deporte;
 
+    public Deportista(String nombre, String deporte) {
+        super(nombre);
+        this.deporte = deporte;
+
+    }
+
     public String getDeporte() {
         return deporte;
     }
