@@ -33,6 +33,7 @@ public class Main {
 
 
         }
+
         CitaMedica citaMedica = new CitaMedica(paciente,doctor);
         citaMedica.mostrarInformacion();
 
