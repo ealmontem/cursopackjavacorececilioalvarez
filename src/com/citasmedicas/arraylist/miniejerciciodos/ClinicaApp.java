@@ -1,4 +1,4 @@
-package com.citasmedicas.arraylist.miniejercicio;
+package com.citasmedicas.arraylist.miniejerciciodos;
 
 import java.util.ArrayList;
 import java.util.List;
