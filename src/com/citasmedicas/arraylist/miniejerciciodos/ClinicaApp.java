@@ -5,29 +5,32 @@ import java.util.List;
 
 public class ClinicaApp {
     public static void main(String[] args) {
-        //creamos pacientes reales
-
         List<Paciente> pacientes = new ArrayList<>();
+        Paciente belinda = new Paciente("Belinda", 12, 'F');
+        Paciente josue = new Paciente("Josue", 18, 'M');
+        Paciente kath = new Paciente("Kath", 11, 'F');
 
-        pacientes.add(new Paciente("Elvis", 33, 'M'));
-        pacientes.add(new Paciente("Juana",32, 'F'));
+        pacientes.add(belinda);
+        pacientes.add(josue);
+        pacientes.add(kath);
 
-        for (Paciente p:pacientes){
-            p.mostrarInformacion();
+        System.out.println("\nBuscando a Belinda");
+
+        Paciente encontrado = buscarPorNombre(pacientes,"Belinda");
+        if (encontrado!=null){
+            encontrado.mostrarInformacion();
+        }else {
+            System.out.println("Paciente no encontrado");
         }
 
-        Paciente paciente = buscarPorNombre(pacientes, "Elvis");
-        System.out.println("El Nombre buscado fue:" + paciente.getNombre() + " Edad:" + paciente.getEdad());
+        System.out.println("\nTotal mayores de edad");
+        System.out.println("Total mayores de edad:" + contarMayoresDeEdad(pacientes));
 
-        int totalMayoresDeEdad = contarMayoresDeEdad(pacientes);
-        System.out.println("Total de Pacientes mayores de edad: " + totalMayoresDeEdad);
-
-        boolean eliminarPacientePorNombre = eliminarPorNombre(pacientes, "Elvis");
-        System.out.println("Eliminar paciente por nombre: " + eliminarPacientePorNombre);
-
-        System.out.println("Total de pacientes: " + mostrarTotalDePacientes(pacientes));
+        System.out.println("\nEliminando a Kath");
+        System.out.println("Eliminado:" + eliminarPorNombre(pacientes,"Kath"));
+        System.out.println("\nTotal de pacientes registrados: " + mostrarTotalDePacientes(pacientes));
+        System.out.println("\nPacientes femeninas:");
         imprimirPacientesFemeninas(pacientes);
-
 
 
     }
@@ -44,7 +47,6 @@ public class ClinicaApp {
 
     public static int contarMayoresDeEdad(List<Paciente> paciente){
         int contador =0;
-        int totalMayoresDeEdad = 0;
         for (Paciente p:paciente){
             if (p.getEdad()>=18){
                 contador++;
