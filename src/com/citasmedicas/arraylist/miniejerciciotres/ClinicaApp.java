@@ -38,8 +38,6 @@ public class ClinicaApp {
         //Mostrar pacientes mayores de edad
         mostrarPacientesMayoresDeEdad(pacientes);
 
-
-
     }
 
 
