@@ -1,7 +1,6 @@
 package com.arquitecturajava.javaAPISModulo2.ejemplo003;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 public class ManejoDeListPrincipal {
