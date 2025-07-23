@@ -1,9 +1,8 @@
-package com.arquitecturajava.poo.herencia.javamodulo002.practicaDos;
+package com.arquitecturajava.javamodulo004.ejemplo001;
 
 public class Persona {
 
 	private String nombre;
-
 	public Persona(String nombre){
 		this.nombre = nombre;
 	}
@@ -15,13 +14,13 @@ public class Persona {
 		this.nombre = nombre;
 	}
 
-	public void imprimirPersona(){
-		System.out.print(getNombre() + " " + "Camina a: ");
+	public void andar() {
+		
+		System.out.println(getNombre()+" camina a 5 km/h");
 	}
 
-	public void andar() {
-		imprimirPersona();
-		System.out.println("5 km/h");
+	@Override
+	public int hashCode() {
+		return super.hashCode();
 	}
-	
 }

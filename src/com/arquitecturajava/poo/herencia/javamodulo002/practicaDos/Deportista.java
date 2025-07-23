@@ -4,6 +4,10 @@ public class Deportista extends Persona {
 
 	private String deporte;
 
+	public Deportista(String nombre) {
+		super(nombre);
+	}
+
 	public String getDeporte() {
 		return deporte;
 	}
@@ -14,7 +18,7 @@ public class Deportista extends Persona {
 	//anotacion
 	@Override
 	public void andar() {
-		
+		super.imprimirPersona();
 		System.out.println(getNombre()+" camina a 10km/h");
 	}
 

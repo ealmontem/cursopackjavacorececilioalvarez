@@ -1,4 +1,4 @@
-package com.arquitecturajava.javaAPISModulo2.ejemplo003;
+package com.arquitecturajava.javaapismodulo002.ejemplo003;
 
 import java.util.ArrayList;
 import java.util.List;

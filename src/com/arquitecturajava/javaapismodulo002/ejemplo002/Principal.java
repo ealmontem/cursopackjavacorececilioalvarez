@@ -1,9 +1,7 @@
-package com.arquitecturajava.javaAPISModulo2.ejemplo002;
+package com.arquitecturajava.javaapismodulo002.ejemplo002;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
 
 public class Principal {
     public static void main(String[] args) {

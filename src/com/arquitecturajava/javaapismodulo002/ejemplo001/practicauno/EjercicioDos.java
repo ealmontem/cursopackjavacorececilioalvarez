@@ -1,4 +1,4 @@
-package com.arquitecturajava.javaAPISModulo2.ejemplo001.practicauno;
+package com.arquitecturajava.javaapismodulo002.ejemplo001.practicauno;
 
 import java.util.ArrayList;
 import java.util.Iterator;

@@ -4,13 +4,13 @@ public class Principal {
 
 	public static void main(String[] args) {
 
-		Persona p1= new Persona();
-		p1.setNombre("pedro");
+		Persona p1= new Persona("Pedro");
+		//p1.setNombre("pedro");
 
 		p1.andar();
 		
-		Persona d1= new Deportista();
-		d1.setNombre("gema");
+		Persona d1= new Deportista("Gema");
+		//d1.setNombre("gema");
 		d1.andar();
 
 		Deportista d2 = (Deportista) d1;
